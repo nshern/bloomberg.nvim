@@ -7,6 +7,7 @@ vim.g.colors_name = "zola"
 
 local xterm_000 = "#000000"
 local xterm_002 = "#008000"
+local xterm_003 = "#808000"
 local xterm_009 = "#ff0000"
 local xterm_010 = "#00ff00"
 local xterm_011 = "#ffff00"
@@ -20,6 +21,7 @@ local xterm_028 = "#008700"
 local xterm_033 = "#0087ff"
 local xterm_040 = "#00d700"
 local xterm_044 = "#00d7d7"
+local xterm_058 = "#5f5f00"
 local xterm_059 = "#5f5f5f"
 local xterm_100 = "#878700"
 local xterm_160 = "#d70000"
@@ -29,6 +31,7 @@ local xterm_202 = "#ff5f00"
 local xterm_205 = "#ff5faf"
 local xterm_233 = "#121212"
 local xterm_234 = "#1c1c1c"
+local xterm_236 = "#303030"
 local xterm_238 = "#444444"
 local xterm_241 = "#626262"
 local xterm_245 = "#8a8a8a"
@@ -71,13 +74,21 @@ theme = {
     PmenuSBar = { bg = xterm_245 },
     PmenuSel = { bg = xterm_019, fg = xterm_015 },
     PmenuThumb = { bg = xterm_241 },
-    Search = { bg = xterm_100, fg = fg },
+    Search = { bg = xterm_058, fg = xterm_254 },
     Special = { fg = xterm_014 },
     Statement = { fg = xterm_013 },
     String = { fg = xterm_010 },
     Statusline = { bg = xterm_246, fg = xterm_000, bold = true },
     Visual = { bg = xterm_238 },
     MiniJump2dSpot = { bg = xterm_028, fg = xterm_000, bold = true },
+    ["@markup.heading.1.markdown"] = { bg = xterm_027, fg = xterm_184, bold = true },
+    ["@markup.heading.2.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.heading.3.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.heading.4.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.heading.5.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.heading.6.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.raw.markdown_inline"] = { bg = xterm_236 },
+
 }
 
 for group, hl in pairs(theme) do
