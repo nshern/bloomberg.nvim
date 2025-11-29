@@ -41,6 +41,52 @@ local xterm_245 = "#8a8a8a"
 local xterm_246 = "#949494"
 local xterm_254 = "#e4e4e4"
 
+local theme
+
+theme = {
+    Added = { link = String },
+    Comment = { fg = xterm_241 },
+    CurSearch = { bg = xterm_011, fg = xterm_000 },
+    CursorLine = { bg = xterm_234 },
+    DiagnosticError = { fg = xterm_009 },
+    DiagnosticHint = { fg = xterm_033 },
+    DiagnosticOk = { Link = String },
+    DiagnosticWarn = { fg = xterm_011 },
+    Directory = { fg = xterm_014 },
+    ErrorMsg = { fg = xterm_160 },
+    Function = { fg = xterm_014 },
+    Identifier = { fg = xterm_033 },
+    LineNr = { fg = xterm_059 },
+    MatchParen = { bg = xterm_059 },
+    MiniJump2dSpot = { bg = xterm_028, fg = xterm_000, bold = true },
+    ModeMsg = { fg = xterm_010 },
+    NonText = { link = Comment },
+    Normal = { bg = xterm_233, fg = xterm_254 },
+    OkMsg = { link = String },
+    Pmenu = { bg = xterm_246, fg = xterm_000 },
+    PmenuSBar = { bg = xterm_245 },
+    PmenuSel = { bg = xterm_019, fg = xterm_015 },
+    PmenuThumb = { bg = xterm_241 },
+    Search = { bg = xterm_058, fg = xterm_254 },
+    Special = { fg = xterm_014 },
+    Statement = { fg = xterm_013 },
+    Statusline = { bg = xterm_246, fg = xterm_000, bold = true },
+    String = { fg = xterm_010 },
+    Visual = { bg = xterm_238 },
+    WarningMsg = { fg = xterm_184 },
+    ["Title"] = { bg = xterm_027, fg = xterm_184, bold = true },
+    ["@markup.heading.2.markdown"] = { fg = xterm_027, bold = true },
+    ["@markup.heading.3.markdown"] = { link = "@markup.heading.2.markdown" },
+    ["@markup.heading.4.markdown"] = { link = "@markup.heading.2.markdown" },
+    ["@markup.heading.5.markdown"] = { link = "@markup.heading.2.markdown" },
+    ["@markup.heading.6.markdown"] = { link = "@markup.heading.2.markdown" },
+    ["@markup.raw.markdown_inline"] = { bg = xterm_236 },
+}
+
+
+for group, hl in pairs(theme) do
+    vim.api.nvim_set_hl(0, group, hl)
+end
 
 vim.g.terminal_color_0 = xterm_000
 vim.g.terminal_color_1 = xterm_160
@@ -58,43 +104,3 @@ vim.g.terminal_color_12 = xterm_033
 vim.g.terminal_color_13 = xterm_013
 vim.g.terminal_color_14 = xterm_014
 vim.g.terminal_color_15 = xterm_015
-
-local theme
-
-theme = {
-    Comment = { fg = xterm_001, bold = true },
-    CurSearch = { bg = xterm_011, fg = xterm_000 },
-    CursorLine = { bg = xterm_234 },
-    DiagnosticError = { fg = xterm_009 },
-    Directory = { fg = xterm_014 },
-    DiagnosticHint = { fg = xterm_033 },
-    DiagnosticWarn = { fg = xterm_011 },
-    Function = { fg = xterm_014 },
-    Identifier = { fg = xterm_033 },
-    LineNr = { fg = xterm_059 },
-    MatchParen = { bg = xterm_059 },
-    Normal = { bg = xterm_233, fg = xterm_254 },
-    Pmenu = { bg = xterm_246, fg = xterm_000 },
-    PmenuSBar = { bg = xterm_245 },
-    PmenuSel = { bg = xterm_019, fg = xterm_015 },
-    PmenuThumb = { bg = xterm_241 },
-    Search = { bg = xterm_058, fg = xterm_254 },
-    Special = { fg = xterm_014 },
-    Statement = { fg = xterm_013 },
-    String = { fg = xterm_010 },
-    Statusline = { bg = xterm_246, fg = xterm_000, bold = true },
-    Visual = { bg = xterm_238 },
-    MiniJump2dSpot = { bg = xterm_028, fg = xterm_000, bold = true },
-    ["@markup.heading.1.markdown"] = { bg = xterm_027, fg = xterm_184, bold = true },
-    ["@markup.heading.2.markdown"] = { fg = xterm_027, bold = true },
-    ["@markup.heading.3.markdown"] = { fg = xterm_027, bold = true },
-    ["@markup.heading.4.markdown"] = { fg = xterm_027, bold = true },
-    ["@markup.heading.5.markdown"] = { fg = xterm_027, bold = true },
-    ["@markup.heading.6.markdown"] = { fg = xterm_027, bold = true },
-    ["@markup.raw.markdown_inline"] = { bg = xterm_236 },
-
-}
-
-for group, hl in pairs(theme) do
-    vim.api.nvim_set_hl(0, group, hl)
-end
