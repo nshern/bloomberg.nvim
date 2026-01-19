@@ -69,6 +69,7 @@ theme = {
     MiniJump2dSpot = { bg = xterm_028, fg = xterm_000, bold = true },
     ModeMsg = { fg = xterm_010 },
     NonText = { link = Comment },
+    -- Normal = { bg = xterm_233, fg = xterm_254 },
     Normal = { bg = xterm_233, fg = xterm_254 },
     OkMsg = { link = String },
     Pmenu = { bg = xterm_246, fg = xterm_000 },
