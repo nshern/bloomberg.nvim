@@ -48,7 +48,7 @@ local theme
 
 theme = {
     Added = { link = String },
-    Comment = { fg = xterm_094 },
+    Comment = { fg = xterm_241 },
     CurSearch = { bg = xterm_011, fg = xterm_000 },
     CursorLine = { bg = xterm_234 },
     DiagnosticError = { fg = xterm_009 },
