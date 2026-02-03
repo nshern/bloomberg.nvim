@@ -28,8 +28,10 @@ local xterm_058 = "#5f5f00"
 local xterm_059 = "#5f5f5f"
 local xterm_094 = "#875f00"
 local xterm_100 = "#878700"
+local xterm_130 = "#af5f00"
 local xterm_160 = "#d70000"
 local xterm_164 = "#d700d7"
+local xterm_172 = "#d78700"
 local xterm_184 = "#d7d700"
 local xterm_202 = "#ff5f00"
 local xterm_205 = "#ff5faf"
@@ -46,7 +48,7 @@ local theme
 
 theme = {
     Added = { link = String },
-    Comment = { fg = xterm_241 },
+    Comment = { fg = xterm_130 },
     CurSearch = { bg = xterm_011, fg = xterm_000 },
     CursorLine = { bg = xterm_234 },
     DiagnosticError = { fg = xterm_009 },
