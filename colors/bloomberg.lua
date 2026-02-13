@@ -91,6 +91,7 @@ theme = {
     Visual = { bg = xterm_238 },
     WarningMsg = { fg = xterm_184 },
     ["Title"] = { bg = xterm_027, fg = xterm_184, bold = true },
+    ["@boolean.python"] = { fg = xterm_202, bold = true },
     ["@markup.heading.2.markdown"] = { fg = xterm_027, bold = true },
     ["@markup.heading.3.markdown"] = { link = "@markup.heading.2.markdown" },
     ["@markup.heading.4.markdown"] = { link = "@markup.heading.2.markdown" },
