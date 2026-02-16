@@ -35,6 +35,7 @@ local xterm_172 = "#d78700"
 local xterm_184 = "#d7d700"
 local xterm_202 = "#ff5f00"
 local xterm_205 = "#ff5faf"
+local xterm_214 = "#ffaf00"
 local xterm_233 = "#121212"
 local xterm_234 = "#1c1c1c"
 local xterm_236 = "#303030"
@@ -86,7 +87,7 @@ theme = {
     Search = { bg = xterm_058, fg = xterm_254 },
     Special = { fg = xterm_014 },
     Statement = { fg = xterm_013 },
-    Statusline = { bg = xterm_246, fg = xterm_000, bold = true },
+    Statusline = { bg = xterm_214, fg = xterm_000, bold = true },
     String = { fg = xterm_010 },
     Visual = { bg = xterm_238 },
     WarningMsg = { fg = xterm_184 },
